@@ -4,28 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Volt</title>
+    <link rel="stylesheet" href="styles/index.css">
 </head>
 <body>
     <header>
         <nav id="nav-bar">
-            <ul>
-                <li><img src="/assets/logo-navbar.png" alt="knoldedge volt logo"></li>
-                <li><a href="#">Features</a></li>
-                <li><a href="#">How it works</a></li>
-                <li><a href="#">Why it's different</a></li>
-                <li><button>Get early access</button></li>
-            </ul>
+                <img src="/assets/logo-navbar.png" alt="knoldedge volt logo">
+
+                <ul>
+                    <li><a href="#">Features</a></li>
+                    <li><a href="#">How it works</a></li>
+                    <li><a href="#">Why it's different</a></li>
+                </ul>
+
+                <button class="btn">Get early access</button>
         </nav>
 
         <div id="banner">
-            <span>Early access now open</span>
+            <p class="early-access"><span class="live-indicator">●</span> Early access now open</p>
 
-            <h1>Structured thinking, not just Note-Taking.</h1>
+            <h1>Structured thinking,<br><span style="color: greenyellow;">not just Note-Taking.</span></h1>
             <p>A private space to store notes, links, and learning summaries - designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
 
             <div>
-                <button>Start Building your Vault [arrow forward]</button> <!--add icon here-->
-                <button>[play]See how it works</button> <!--add icon here-->
+                <button class="btn">Start Building your Vault [arrow forward]</button> <!--add icon here-->
+                <button class="btn-outlined">[play]See how it works</button> <!--add icon here-->
             </div>
         </div>
     </header>
