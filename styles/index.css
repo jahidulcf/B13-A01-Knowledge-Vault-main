@@ -5,9 +5,11 @@
 }
 
 body {
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    max-width: 1600px;
+    font-family: 'Inter', system-ui, sans-serif;
 }
 
+/* ----------- Common ------------*/
 
 li {
     list-style-type: none;
@@ -15,29 +17,35 @@ li {
 
 a {
     text-decoration: none;
+    color: #000;
 }
 
-/* ----------- Common ------------*/
+h2 {
+    font-size: 48px;
+    font-weight: bold;
+}
+
 .btn {
-    padding: 8px 16px;
-    color: white;
-    background-color: green;
-    border: none;
+    padding: 12px 16px;
+    color: #fff;
+    background-color: #30B868;
+    font-weight: 600;
+    border: 1px solid #30B868;
     border-radius: 4px;
 }
 
 .btn-outlined {
-    padding: 8px 16px;
-    color: white;
+    padding: 12px 16px;
+    color: #fff;
     background-color: transparent;
-    border: 1px solid green;
+    border: 1px solid #fff;
     border-radius: 4px;
 }
 
 /* ----------- Header -----------*/
 
 #nav-bar{
-    padding: 16px 10%;
+    padding: 16px 120px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -51,56 +59,82 @@ a {
 #banner {
     background-image: url("/assets/hero-bg.png");
     text-align: center;
-    padding: 120px 25%;
+    padding: 70px 120px 134px;
 }
 
 #banner .early-access {
-    display: inline-block;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
     background-color: white;
-    color: green;
-    padding: 12px 8px;
+    color: #469165;
+    padding: 8px 12px;
     border-radius: 50px;
 }
 
 #banner .live-indicator {
-    background-color: lightgreen;
-    padding: 0 6px;
+    background-color: #469165;
+    width: 16px;
+    height: 16px;
+    border: 5px solid #ffffff80;
     border-radius: 50%;
+    box-shadow: 0 0 0 4px #46916520;
+}
+
+#banner .banner-btns {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
 }
 
 #banner h1 {
-    color: white;
+    color: #fff;
+    opacity: 0.9;
     font-size: 64px;
     margin-bottom: 16px;
 }
 
 #banner p {
-    color: white;
-    margin-bottom: 16px;
+    color: #fff;
+    font-size: 18px;
+    margin-bottom: 32px;
 }
 
 /* ------------ main ------------ */
-
-main {
-    padding: 16px 10% 24px;
-}
 
 .section {
     text-align: center;
 }
 
+.section-note h2 {
+    padding: 60px 0 16px;
+}
+
+.section-note {
+    padding: 0 120px;
+}
+
 .section-note .cards {
     display: flex;
-    gap: 16px;
+    gap: 24px;
+    transform: translateY(+44px);
 }
+
 .card {
-    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 24px;
     border: 1px solid #ddd;
-    border-radius: 4px;
+    border-radius: 8px;
 }
 
 .card img {
-    margin-top: 30px;
+    width: 60px;
+    height: 60px;
     background: red;
     padding: 8px;
     border-radius: 50%;
@@ -109,44 +143,76 @@ main {
 .section-brain {
     display: flex;
     gap: 60px;
-    padding: 60px 0;
+    padding: 120px;
+    background-color: #fff;
     align-items: center;
 }
 
 .section-brain .main-image {
-    width: 500px;
-    height: 500px;
+    width: 600px;
+    height:600px;
+    border-radius: 12px;
 }
 
 .section-brain .content {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    text-align: left;
+}
+.section-brain .content h2 {
+    margin: 16px 0;
     text-align: left;
 }
 
-.section-early-access {
-    padding: 60px 25%;
-    background-color: lightgoldenrodyellow;
+.section-brain .content ul {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
 }
 
+.section-brain .content ul li {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.section-early-access {
+    padding: 0 120px 120px;
+}
+.section-early-access .early-access-card {
+    background-color: #F7F6F2;
+    padding: 80px 40px;
+}
+
+.section-early-access .early-access-card .content {
+    margin-bottom: 24px;
+}
+
+.section-early-access .early-access-card .content h2 {
+    margin-bottom: 16px;
+}
 .section-early-access button {
-    display: block;
-    margin: auto;
+    display: block;;
+    margin: 24px auto 16px;
 }
 
 /* ------------ footer ------------- */
 
 footer {
-    color: white;
-    background-color: rgb(11, 11, 62);
+    color: #fff;
+    background-color: #001931;
+    padding: 120px 120px 30px
 }
 
 footer .content {
     display: flex;
     justify-content: space-between;
-    padding: 60px 10%;
 }
  
 footer hr {
-    color: #f01414;
+    margin-top: 80px;
+    background-color:  #FAFAFA;
 }
 
 .social-links ul {

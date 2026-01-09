@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Knowledge Volt</title>
     <link rel="stylesheet" href="styles/index.css">
+    <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
 </head>
 <body>
     <header>
@@ -21,12 +24,12 @@
         </nav>
 
         <div id="banner">
-            <p class="early-access"><span class="live-indicator">•</span> Early access now open</p>
+            <p class="early-access"><span class="live-indicator"></span> Early access now open</p>
 
-            <h1>Structured thinking,<br><span style="color: greenyellow;">not just Note-Taking.</span></h1>
-            <p>A private space to store notes, links, and learning summaries - designed to help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
+            <h1>Structured thinking,<br><span style="color: #30B868;">not just Note-Taking.</span></h1>
+            <p>A private space to store notes, links, and learning summaries - designed to<br> help you think clearly, connect ideas, and turn learning into long-term knowledge.</p>
 
-            <div>
+            <div class="banner-btns">
                 <button class="btn">Start Building your Vault [arrow forward]</button> <!--add icon here-->
                 <button class="btn-outlined">[play]See how it works</button> <!--add icon here-->
             </div>
@@ -67,10 +70,11 @@
             <img class="main-image" src="/assets/knowledge.png" alt="a brain inside a light bulb with showing KV's core business concepts.">
             
             <div class="content">
-                <h6>solution</h6>
-                <h2>Your second brain, structured by design.</h2>
-                <p>Personal Knowledge Vault isn't another note-taking app. It's a thinking environment where every note, link, and summary becomes part of an interconnected web of understanding.</p>
-
+                <div>
+                    <h6>solution</h6>
+                    <h2>Your second brain, structured by design.</h2>
+                    <p>Personal Knowledge Vault isn't another note-taking app. It's a thinking environment where every note, link, and summary becomes part of an interconnected web of understanding.</p>
+                </div>
                 <ul>
                     <li> <img src="/assets/CheckCircle.png" alt="list item point"> Capture ideas with structure built-in from day one</li>
                     <li> <img src="/assets/CheckCircle.png" alt="list item point"> Connect related concepts automatically as you write</li>
@@ -81,11 +85,17 @@
         </section>
 
         <section class="section section-early-access">
-            <h2>Ready to think more clearly?</h2>
-            <p>Join thousands of learners who are building their personal knowledge vaults. Start free, no credit card required.</p>
-
-            <button class="btn">Get early access [arrow forward]</button> <!--add icon here-->
-            <span>Free during early access</span>・<span>No credit card needed</span>
+            <div class="early-access-card">
+                <div class="content">
+                    <h2>Ready to think more clearly?</h2>
+                    <p>Join thousands of learners who are building their personal knowledge vaults. Start free, no credit card required.</p>
+                </div>
+                
+                <div>
+                    <button class="btn">Get early access [arrow forward]</button> <!--add icon here-->
+                    <span>Free during early access</span>・<span>No credit card needed</span>
+                </div>
+            </div>
         </section>
 
     </main>
