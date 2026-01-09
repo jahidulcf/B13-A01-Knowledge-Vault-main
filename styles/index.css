@@ -64,7 +64,7 @@ a {
 
 #banner .live-indicator {
     background-color: lightgreen;
-    padding: 4px 6px;
+    padding: 0 6px;
     border-radius: 50%;
 }
 
@@ -81,3 +81,80 @@ a {
 
 /* ------------ main ------------ */
 
+main {
+    padding: 16px 10% 24px;
+}
+
+.section {
+    text-align: center;
+}
+
+.section-note .cards {
+    display: flex;
+    gap: 16px;
+}
+.card {
+    padding: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.card img {
+    margin-top: 30px;
+    background: red;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.section-brain {
+    display: flex;
+    gap: 60px;
+    padding: 60px 0;
+    align-items: center;
+}
+
+.section-brain .main-image {
+    width: 500px;
+    height: 500px;
+}
+
+.section-brain .content {
+    text-align: left;
+}
+
+.section-early-access {
+    padding: 60px 25%;
+    background-color: lightgoldenrodyellow;
+}
+
+.section-early-access button {
+    display: block;
+    margin: auto;
+}
+
+/* ------------ footer ------------- */
+
+footer {
+    color: white;
+    background-color: rgb(11, 11, 62);
+}
+
+footer .content {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 10%;
+}
+ 
+footer hr {
+    color: #f01414;
+}
+
+.social-links ul {
+    display: flex;
+    gap: 8px;
+}
+
+.copy {
+    text-align: center;
+    padding: 16px;
+}
