@@ -20,4 +20,4 @@ Design referance: https://www.figma.com/design/oMYH7Ccj6UU8MKZwuGiAXB/KnowledgeV
     |- README.md
 ```
 
-### Live demo: in progress 🚧
+### Live demo: https://jahidulcf.github.io/B13-A01-Knowledge-Vault-main/

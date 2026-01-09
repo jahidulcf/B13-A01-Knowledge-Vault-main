@@ -57,7 +57,7 @@ h2 {
 }
 
 #banner {
-    background-image: url("../assets/hero-bg.png");
+    background-image: url("../assets/hero-bg.png"), #636161;
     text-align: center;
     padding: 70px 120px 134px;
 }
