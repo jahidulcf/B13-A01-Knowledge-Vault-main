@@ -149,8 +149,8 @@ h2 {
 }
 
 .section-brain .main-image {
-    width: 600px;
-    height:600px;
+    width: 40%;
+    height:auto;
     border-radius: 12px;
 }
 
